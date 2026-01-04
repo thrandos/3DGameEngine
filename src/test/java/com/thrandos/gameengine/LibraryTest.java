@@ -30,7 +30,7 @@ public class LibraryTest {
             System.out.println("  - BufferUtils: " + bufferUtilsClass.getName());
         } catch (ClassNotFoundException e) {
             System.err.println("✗ Failed to load LWJGL2 classes: " + e.getMessage());
-            System.exit(1);
+            throw new RuntimeException("LWJGL2 library not found", e);
         }
     }
     
@@ -45,7 +45,7 @@ public class LibraryTest {
             System.out.println("  - TextureLoader: " + textureLoaderClass.getName());
         } catch (ClassNotFoundException e) {
             System.err.println("✗ Failed to load Slick-Util classes: " + e.getMessage());
-            System.exit(1);
+            throw new RuntimeException("Slick-Util library not found", e);
         }
     }
 }

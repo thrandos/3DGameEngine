@@ -14,9 +14,14 @@ public class Loader {
     /**
      * Loads a texture from the resources folder
      * 
+     * NOTE: This is a placeholder implementation. The current Slick-Util library
+     * is a minimal interface-only implementation. For actual texture loading,
+     * either use the full Slick-Util library or implement custom texture loading
+     * using LWJGL's texture utilities.
+     * 
      * @param fileName The name of the texture file
      * @param fileExtension The file extension (e.g., "PNG", "JPG")
-     * @return The loaded texture
+     * @return The loaded texture, or null if loading fails
      */
     public Texture loadTexture(String fileName, String fileExtension) {
         try {
@@ -33,8 +38,10 @@ public class Loader {
             e.printStackTrace();
             return null;
         } catch (UnsupportedOperationException e) {
-            // This is expected with our minimal Slick-Util implementation
-            System.out.println("Texture loading placeholder called for: " + fileName);
+            // This is expected with the minimal Slick-Util implementation
+            // To enable texture loading, replace lib/slick-util.jar with the full library
+            System.out.println("Note: Texture loading placeholder called for: " + fileName);
+            System.out.println("      For actual texture loading, use the full Slick-Util library");
             return null;
         }
     }
