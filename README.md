@@ -1,2 +1,2 @@
 # 3DGameEngine
-A 
+A lightweight engine built with Java.
