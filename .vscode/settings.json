@@ -1,0 +1,14 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "c:\\Users\\matin\\vsrepos\\3DGameEngine\\lib\\slick-util.jar",
+            "c:\\Users\\matin\\vsrepos\\3DGameEngine\\lib\\lwjgl.jar"
+        ],
+        "exclude": [
+            "lib/lwjgl-natives-windows.jar"
+        ]
+    },
+    "java.project.sourcePaths": [
+        "."
+    ]
+}
