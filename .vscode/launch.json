@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    /*
+        {
+            "type": "java",
+            "name": "MainComponent",
+            "request": "launch",
+            "mainClass": "com.thrandos.engine.MainComponent",
+            "projectName": "3DGameEngine_78ecbc39"
+        },
+    */
+        {
+            "type": "java",
+            "name": "Run Engine",
+            "request": "launch",
+            "mainClass": "com.thrandos.engine.MainComponent",
+            "vmArgs": "-Djava.library.path=${workspaceFolder}/lib/native/windows"
+        }
+    ]
+}
