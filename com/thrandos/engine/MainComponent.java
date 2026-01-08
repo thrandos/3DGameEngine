@@ -48,7 +48,7 @@ public class MainComponent
         {
             boolean render = false;
             
-            long startTime = Time.getTime();
+            long startTime = Time.getTime(); // Good to review this later.
             long passedTime = startTime - lastTime;
             lastTime = startTime;
 
